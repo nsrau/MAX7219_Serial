@@ -5,7 +5,7 @@
 	 ***********************
 	
 	Fix: Newton Urbanetz
-			 ===============
+	     ===============
 
 	#fix PROGMEM prog_uchar CH[]  to PROGMEM const unsigned char CH[]
 	#fix //Put extracted character on Display "64" to "32" / m.writeSprite and m.setColumn "64" to "maxInUse*8"
