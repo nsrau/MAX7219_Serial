@@ -124,13 +124,13 @@ byte buffer[100];
  
 // active sentenses
 char string1[] = " Hello MATRIX LeD  ";
-char string2[] = " My name is Newton  ";
-
  
 void setup(){
   m.init(); // module MAX7219
   m.setIntensity(13); // LED Intensity 0-15
   Serial.begin(9600); // serial communication initialize
+	
+  printStringWithShift(string1, 100);  // Send scrolling Text
 }
  
 void loop(){
@@ -144,10 +144,6 @@ void loop(){
   byte c;
   delay(100);
   m.shiftLeft(false, true);
-  /*
-  printStringWithShift(string1, 100);  // Send scrolling Text
-  printStringWithShift(string2, 100);  // Send scrolling Text
- */
 }
  
 // Put extracted character on Display
